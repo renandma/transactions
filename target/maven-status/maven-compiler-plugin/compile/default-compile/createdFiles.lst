@@ -1,0 +1,6 @@
+exercicios\transactions\enums\CardAplicationEnum.class
+exercicios\transactions\App.class
+exercicios\transactions\enums\StatusEnum.class
+exercicios\transactions\config\WebConfig.class
+exercicios\transactions\controller\TransactionController.class
+exercicios\transactions\model\Transaction.class
