@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import exercicios.transactions.model.Transaction;
 import exercicios.transactions.service.TransactionService;
-import javassist.NotFoundException;
 
 @Resource
 @RestController
@@ -37,11 +36,13 @@ public class TransactionController {
         }
     }
     
+    //Exercicio 2
     @GetMapping(value = "/transaction/all", produces = "application/json; charset=utf-8")
     public List<Transaction> getAllTransactions() throws Exception {
         return transactionService.getAll();
     }
     
+    //Exercicio 3
     @PutMapping(value = "/transaction", produces = "application/json; charset=utf-8")
     public ResponseEntity<String> update(@RequestBody Transaction transaction) {
         try {
